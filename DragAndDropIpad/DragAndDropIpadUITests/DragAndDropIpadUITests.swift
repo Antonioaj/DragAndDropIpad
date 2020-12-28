@@ -33,7 +33,7 @@ class DragAndDropIpadUITests: XCTestCase {
     
     func test_WhenOutOfBoundsRangeIsSelected_shouldFail(){
         let vm = WelcomeViewModel()
-        XCTAssertNil(vm.array[1] == "1")
+        XCTAssertTrue(vm.array[1] == "1")
         
     }
 
