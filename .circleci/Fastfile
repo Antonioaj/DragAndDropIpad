@@ -4,6 +4,10 @@ lane :beta do
   upload_to_testflight
 end
 
+lane :tests do
+  run_tests(scheme: "DragAndDropIpadUITests")
+end
+
 lane :release do
   capture_screenshots
   build_app
